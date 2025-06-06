@@ -31,13 +31,16 @@
             <div class="container px-4">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                <img class="sclogo img-fluid" src="assets/isc25.png" alt="SC24 Logo" style="max-width: 200%;">
+                <img class="sclogo img-fluid" src="assets/isc25.png" alt="ISC25 Logo" style="max-width: 100%;">
                 </div>
                 <div class="col-md-8 text-center">
                 <h1 class="fw-bolder">Democratizing AI Accelerators for HPC Applications: <br> Challenges, Success, and Support</h1>
                 <br>
-    
-                <p style="font-size: 1.25em;">Placeholder for ISC25</p>
+                <p class="lead">Thursday, June 12, 2025 <br>
+                    1:00 PM to 2:00 PM (Europe/Berlin)<br>
+                    Location: Hall E - 2nd floor <br>
+                </p>
+                <p style="font-size: 1.25em;">held in conjunction with ISC24</p>
                 </div>
             </div>
             </div>
@@ -56,7 +59,28 @@
                             
                         
                         <p class="lead">
-                            A recent surge in novel AI accelerator hardware (e.g. from Cerebras, Groq, SambaNova, Graphcore, Intel, and Tenstorrent) has sparked intense interest in running HPC applications and driven algorithmic research on these architectures. However, the maturity levels of associated tooling and software stacks vary significantly, with gaps in documentation and support. This BoF aims to explore trends in AI accelerators for HPC, ideal programming models, software stack support, code portability, training resources, and common challenges. We hope to foster a community of users interested or experienced in using AI accelerators for HPC applications.
+                            Recently, there has been a surge in the number of novel AI hardware architectures from companies including Cerebras, Groq, SambaNova, Graphcore, Intel, Tenstorrent, etc. Some of these systems are accessible to the research community through testbeds in the US (e.g. ALCF AI Testbed) and Europe (e.g. EPCC at the University of Edinburgh). Beyond their primary use in AI, these accelerators have sparked intense interest and rapid development in their capacity for handling HPC workloads and driving algorithmic research. Their distinctive architectural designs, often with significant raw compute capability and high bandwidth, have proven capable of significantly enhancing real-world performance for specific workloads, often outperforming GPUs. As these technologies are still emerging, the maturity levels of associated tooling and software stacks vary considerably, and there are gaps in documentation and support.
+                        </p>
+
+                        <p class="lead">
+
+                        
+                            This BoF aims to explore trends in AI accelerators for HPC, ideal programming models, software stack support, code portability, training resources, and common challenges. This BoF aims to explore several pertinent questions:
+                            <li> What are the prevailing trends in AI accelerators for HPC applications? </li>
+                            <li> How do the different architectures better suit different workloads? </li>
+                            <li> What is the ideal programming model for these accelerators? Are traditional ones like OpenMP, OpenCL, and SYCL suited? </li>
+                            <li> Currently, vendor-specific programming models are used to port applications. What is the best way to enable portability across various AI hardware architectures?
+What software stack support from the vendors is needed to enable the research community to build higher-level abstractions? </li>
+                            <li> Where can one find robust training resources? </li>
+                            <li> What are the common challenges users encounter with these accelerators? </li>
+                            <li> How can vendors enhance support for developers? </li>
+                            <li> Where can interested users access and experiment with these hardware resources? </li>
+
+                        </p>
+
+                        <p class="lead">
+                            Pooling the extensive knowledge within the community, this BoF intends to assemble developers experienced in, or are interested in using AI accelerators for HPC applications. The aim is to foster a community, and engage in discussion, and share challenges, experiences, success stories, and insights gained from using these accelerators. It is also an opportunity for AI accelerator providers (research centers, hardware vendors) to understand the requirements and challenges users face when developing applications on their platforms, and engage in how best to support users. Representatives from the industry will be invited to speak and engage in discussion regarding their HPC software design and support, but they will not influence the vendor-neutral format of the session.
+                            We intend to turn this BoF into a series to ensure continual community engagement. 
                         </p>
                         <!-- <p class="text-center"><a href="https://sc24.conference-program.com/presentation/?id=bof133&sess=sess628">Link to SC24 BoF Page</a> -->
 
@@ -67,15 +91,12 @@
         </section>
         
         
+        
         <section id="agenda">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    
                     <div class="col-lg-8">
                         <h2>Agenda</h2>
-                        <div class="alert alert-warning text-center" role="alert">
-                            Agenda is being revised
-                        </div>
                         <table class="table table-bordered table-hover">
                             <colgroup>
                                 <col style="width: 30%;">
@@ -89,24 +110,92 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
-                                    <td>Welcome</td>
+                                    <td>1.00-1.05 PM</td>
+                                    <td>Welcome 
+                                    [<a href="./slides/">Slides</a>] <br>
+                                        <a href="https://memani1.github.io/">Murali Emani</a>, ANL</td>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td></td>
+                                    <td>1.05-1.30 PM</td>
                                     <td><b>Flash Talks</b> (4 minutes each)</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td></td>
+                                    <td>Developing Custom Applications at Wafer-Scale 
+                                        [<a href="./slides/2_Cerebras.pdf">Slides</a>]<br>
+                                        <a href="https://www.linkedin.com/in/leighton-wilson/">Leighton Wilson</a>, Cerebras Systems</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Accelerating Scientific Applications with SambaNova Reconfigurable Architecture 
+                                        [<a href="./slides/3_Vijay_SambaNova.pdf">Slides</a>]
+                                        <br>
+                                        <a href="https://www.linkedin.com/in/vijay-tatkar-8966472/">Vijay Tatkar</a> , SambaNova Systems</td>
                                 </tr>
 
                                 <tr>
                                     <td></td>
+                                    <td>HPC with the Groq MLIR Compiler
+                                        [<a href="./slides/4_Groq.pdf">Slides</a>]<br>
+                                        <a href="https://www.linkedin.com/in/sanjif-shan-665353161/">Sanjif Shanmugavelu</a>, Groq</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Tenstorrent Scale-out framework for HPC applications
+                                        [<a href="./slides/5_Tenstorrent.pdf">Slides</a>] <br>
+                                        <a href="https://www.linkedin.com/in/felixclc/">Felix LeClaire</a>, Tenstorrent</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Unstructured Hydrodynamics on Spatial Dataflow Architectures
+                                        [<a href="./slides/6_LLNL.pdf">Slides</a>]<br>
+                                        <a href="https://www.linkedin.com/in/brian-van-essen-14ba501/">Brian C. Van Essen</a>, LLNL</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Experience with AI Testbeds at ALCF
+                                        [<a href="./slides/7_ANL.pdf">Slides</a>]<br>
+                                        <a href="https://sraskar.github.io/">Siddhisanket Raksar</a>, ANL</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>RISC-V: An explosion in AI accelerators for HPC
+                                        [<a href="./slides/8_EPCC.pdf">Slides</a>]<br>
+                                        <a href="https://nickbrown.online/">Nick Brown</a>, EPCC</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Cache Me If You Can: Outpacing Traditional Hardware
+                                        [<a href="./slides/9_kaust.pdf">Slides</a>]<br>
+                                        <a href="https://cemse.kaust.edu.sa/hicma/people/person/hatem-ltaief">Hatem Ltaief</a>, King Abdullah University of Science & Technology </td>
+                                </tr> -->
+                                <tr>
+                                    <td>1.25-1.50 PM</td>
                                     <td><b>Panel Discussion</b></td>
                                 </tr>
               
-                                 
+                                    <td></td>
+                                    
+                                    <td>
+                                        <b>Moderator:</b> <a href="https://memani1.github.io/">Murali Emani</a> (ANL) <br>
+                                        <b>Panelists:</b> <br>
+                                        <u>Vendors:</u> 
+                                        <li>Leighton Wilson (Cerebras Systems) </li> 
+                                        <li>TBD (SambaNova Systems) </li> 
+                                        <li>Sanjif Shanmugavelu (Groq) </li> 
+                                        <li>Felix LeClaire (Tenstorrent) </li>
+                                        <u>Facilities:</u> 
+                                        <li>Brian C. Van Essen (LLNL) </li> 
+                                        <li>Venkatram Vishwanath (ANL) </li>
+                                        <u>Users:</u> 
+                                        <li>Nick Brown (EPCC) </li> 
+                                        <li>Hatem Ltaief (KAUST) </li>
+                                    </td>
+                                </tr>
 
                                 <tr>
-                                    <td></td>
+                                    <td>1.50-2.00 PM</td>
                                     <td><b>Audience Q&amp;A</b></td>
                                 </tr>
 
@@ -122,41 +211,6 @@
 
             </div>
 
-        </section>
-
-        
-        <section class="bg-light" id="org">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Organizers</h2>
-                            <!-- <li>Joseph Lee, Edinburgh Parallel Computing Centre</li> -->
-                            <li>Murali Emani, Argonne National Laboratory (ANL)</li>
-                            <li>Siddhisanket Raskar, Argonne National Laboratory (ANL)</li>
-                            <li>Tal Ben-Nun, Lawrence Livermore National Laboratory (LLNL)</li>
-                            <li>Brian Van Essen, Lawrence Livermore National Laboratory (LLNL)</li>
-                            <li>Hatem Ltaief, King Abdullah University of Science & Technology (KAUST)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <section id="past">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Past Events</h2>
-                        <ul>
-                            <li><a href="./Past/SC24/index.html">SC 2024</a></li>
-                            <li><a href="./Past/ISC24/index.html">ISC 2024</a></li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Footer-->
