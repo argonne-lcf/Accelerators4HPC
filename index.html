@@ -22,6 +22,11 @@
                         <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#org">Organizers</a></li>
                         <li class="nav-item"><a class="nav-link" href="#past">Past Events</a></li>
+                        <li class="nav-item">
+                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                                <span class="theme-icon">🌙</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -91,129 +96,213 @@
         <section id="agenda">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <h2>Agenda</h2>
-                        <div class="alert-info-custom">
-                            <strong>📅 Coming Soon</strong><br>
-                            The detailed agenda will be updated shortly. Check back soon for the complete schedule of presentations and discussions.
+                        <div class="agenda-table-wrapper">
+                            <table class="table table-hover agenda-table">
+                                <colgroup>
+                                    <col style="width: 25%;">
+                                    <col style="width: 75%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Topic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="time-cell">5:15 - 5:20 PM</td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Welcome & Opening Remarks</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://memani1.github.io/">Murali Emani</a></span>, ANL
+                                                <span class="slides-link">[<a href="./slides/1_Intro.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="section-header">
+                                        <td class="time-cell">5:20 - 6:00 PM</td>
+                                        <td class="topic-cell"><strong>⚡ Flash Talks</strong> <span style="font-weight: normal; color: #6c757d;">(4 minutes each)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://www.linkedin.com/in/felixclc/">Felix LeClaire</a></span>, Tenstorrent
+                                                <span class="slides-link">[<a href="./slides/2_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://tbennun.github.io/">Tal Ben-Nun</a></span>, LLNL
+                                                <span class="slides-link">[<a href="./slides/3_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://nickbrown.online/">Nick Brown</a></span>, EPCC
+                                                <span class="slides-link">[<a href="./slides/4_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://cemse.kaust.edu.sa/hicma/people/person/hatem-ltaief">Hatem Ltaief</a></span>, KAUST
+                                                <span class="slides-link">[<a href="./slides/5_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://www.linkedin.com/in/sanjif-shan-665353161/">Sanjif Shanmugavelu</a></span>, Groq
+                                                <span class="slides-link">[<a href="./slides/6_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://memani1.github.io/">Murali Emani</a></span>, ANL
+                                                <span class="slides-link">[<a href="./slides/7_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="topic-title">Title TBD</div>
+                                            <div class="topic-meta">
+                                                <span class="speaker-name"><a href="https://www.pnnl.gov/people/andres-marquez">Andres Marquez</a></span>, PNNL
+                                                <span class="slides-link">[<a href="./slides/8_talk.pdf">Slides - TBD</a>]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="section-header">
+                                        <td class="time-cell">6:00 - 6:30 PM</td>
+                                        <td class="topic-cell"><strong>💬 Panel Discussion</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell"></td>
+                                        <td class="topic-cell">
+                                            <div class="panel-info">
+                                                <div class="panel-moderator">
+                                                    <strong>Moderator:</strong> <span class="speaker-name"><a href="https://sraskar.github.io/">Siddhisanket Raskar</a></span>, PNNL
+                                                </div>
+                                                <div class="panel-participants">
+                                                    <strong>Panelists:</strong>
+                                                    <ul class="panelist-list">
+                                                        <li><a href="https://www.linkedin.com/in/felixclc/">Felix LeClaire</a> (Tenstorrent)</li>
+                                                        <li><a href="https://tbennun.github.io/">Tal Ben-Nun</a> (LLNL)</li>
+                                                        <li><a href="https://nickbrown.online/">Nick Brown</a> (EPCC)</li>
+                                                        <li><a href="https://cemse.kaust.edu.sa/hicma/people/person/hatem-ltaief">Hatem Ltaief</a> (KAUST)</li>
+                                                        <li><a href="https://www.linkedin.com/in/sanjif-shan-665353161/">Sanjif Shanmugavelu</a> (Groq)</li>
+                                                        <li><a href="https://www.pnnl.gov/people/andres-marquez">Andres Marquez</a> (PNNL)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="section-header">
+                                        <td class="time-cell">6:30 - 6:45 PM</td>
+                                        <td class="topic-cell"><strong>❓ Audience Q&amp;A</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <!-- <table class="table table-bordered table-hover">
-                            <colgroup>
-                                <col style="width: 30%;">
-                                <col style="width: 70%;">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Topic</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.00-1.05 PM</td>
-                                    <td>Welcome 
-                                    [<a href="./slides/">Slides</a>] <br>
-                                        <a href="https://memani1.github.io/">Murali Emani</a>, ANL</td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1.05-1.30 PM</td>
-                                    <td><b>Flash Talks</b> (4 minutes each)</td>
-                                </tr> -->
-                                <!-- <tr>
-                                    <td></td>
-                                    <td>Developing Custom Applications at Wafer-Scale 
-                                        [<a href="./slides/2_Cerebras.pdf">Slides</a>]<br>
-                                        <a href="https://www.linkedin.com/in/leighton-wilson/">Leighton Wilson</a>, Cerebras Systems</td>
-                                </tr>
-
-                                <tr>
-                                    <td></td>
-                                    <td>HPC with the Groq MLIR Compiler
-                                        [<a href="./slides/4_Groq.pdf">Slides</a>]<br>
-                                        <a href="https://www.linkedin.com/in/sanjif-shan-665353161/">Sanjif Shanmugavelu</a>, Groq</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Tenstorrent Scale-out framework for HPC applications
-                                        [<a href="./slides/5_Tenstorrent.pdf">Slides</a>] <br>
-                                        <a href="https://www.linkedin.com/in/felixclc/">Felix LeClaire</a>, Tenstorrent</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Unstructured Hydrodynamics on Spatial Dataflow Architectures
-                                        [<a href="./slides/6_LLNL.pdf">Slides</a>]<br>
-                                        <a href="https://www.linkedin.com/in/brian-van-essen-14ba501/">Brian C. Van Essen</a>, LLNL</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Experience with AI Testbeds at ALCF
-                                        [<a href="./slides/7_ANL.pdf">Slides</a>]<br>
-                                        <a href="https://sraskar.github.io/">Siddhisanket Raksar</a>, ANL</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>RISC-V: An explosion in AI accelerators for HPC
-                                        [<a href="./slides/8_EPCC.pdf">Slides</a>]<br>
-                                        <a href="https://nickbrown.online/">Nick Brown</a>, EPCC</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Cache Me If You Can: Outpacing Traditional Hardware
-                                        [<a href="./slides/9_kaust.pdf">Slides</a>]<br>
-                                        <a href="https://cemse.kaust.edu.sa/hicma/people/person/hatem-ltaief">Hatem Ltaief</a>, King Abdullah University of Science & Technology </td>
-                                </tr> -->
-                                <!-- <tr>
-                                    <td>1.30-2.00 PM</td>
-                                    <td><b>Panel Discussion</b></td>
-                                </tr>
-              
-                                    <td></td>
-                                    
-                                    <td>
-                                        <b>Moderator:</b> <a href="https://memani1.github.io/">Murali Emani</a> (ANL) <br>
-                                        <b>Panelists:</b> <br>
-                                        
-                                        <li>Leighton Wilson (Cerebras Systems) </li> 
-                                        <li>Sanjif Shanmugavelu (Groq) </li> 
-                                        <li>Felix LeClaire (Tenstorrent) </li>
-                                        
-                                        <li>Brian C. Van Essen (LLNL) </li> 
-                                        <li>Venkatram Vishwanath (ANL) </li>
-                                        
-                                        <li>Nick Brown (EPCC) </li> 
-                                        <li>Hatem Ltaief (KAUST) </li>
-                                    </td>
-                                </tr> -->
-
-                            </tbody>
-                        </table>
-                        <!-- <div class="alert alert-info text-center" role="alert">
-                            Please check back later for the latest slides.
-                        </div> -->
+                        <div class="alert-info-custom text-center">
+                            <strong>📄 Slides Coming Soon</strong><br>
+                            Presentation slides will be available after the event. Check back later for updates.
+                        </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </section>
 
         <section class="bg-light" id="org">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <h2>Organizers</h2>
-                        <ul class="organizers-list">
-                            <!-- <li>Joseph Lee, Edinburgh Parallel Computing Centre</li> -->
-                            <li>Murali Emani, Argonne National Laboratory (ANL)</li>
-                            <li>Siddhisanket Raskar, Argonne National Laboratory (ANL)</li>
-                            <li>Tal Ben-Nun, Lawrence Livermore National Laboratory (LLNL)</li>
-                            <li>Brian Van Essen, Lawrence Livermore National Laboratory (LLNL)</li>
-                            <li>Hatem Ltaief, King Abdullah University of Science & Technology (KAUST)</li>
-                            <li>Sanjif Shanmugavelu (Groq)</li>
-                        </ul>
+                        <div class="organizers-grid">
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="https://memani1.github.io/images/Murali-profile-pic.jpeg" alt="Murali Emani">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://memani1.github.io/">Murali Emani</a></div>
+                                    <div class="organizer-designation">Computer Scientist</div>
+                                    <div class="organizer-institution">Argonne National Laboratory</div>
+                                </div>
+                            </div>
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="https://sraskar.github.io/profile.jpeg" alt="Siddhisanket Raskar">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://sraskar.github.io/">Siddhisanket Raskar</a></div>
+                                    <div class="organizer-designation">Data Scientist</div>
+                                    <div class="organizer-institution">Pacific Northwest National Laboratory</div>
+                                </div>
+                            </div>
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="https://tbennun.github.io/me.jpg" alt="Tal Ben-Nun">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://tbennun.github.io/">Tal Ben-Nun</a></div>
+                                    <div class="organizer-designation">Computer Scientist</div>
+                                    <div class="organizer-institution">Lawrence Livermore National Laboratory</div>
+                                </div>
+                            </div>
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="https://nickbrown.online/wp-content/uploads/2023/09/nick_brown.jpg" alt="Nick Brown">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://nickbrown.online/">Nick Brown</a></div>
+                                    <div class="organizer-designation">Senior Research Fellow</div>
+                                    <div class="organizer-institution">Edinburgh Parallel Computing Centre</div>
+                                </div>
+                            </div>
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="https://cemse.kaust.edu.sa/sites/default/files/styles/large/https/lh3.googleusercontent.com/d/1IbsrmIZ6bWF97SgDYubndn0iMgMDgQ4N%3Ds1920%3F/kaust-cemse-exaflow-hicma-person-hatem-ltaief.avif.jpg.webp?itok=b58kJ0VT" alt="Hatem Ltaief">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://cemse.kaust.edu.sa/profiles/hatem-ltaief">Hatem Ltaief</a></div>
+                                    <div class="organizer-designation">Principal Research Scientist</div>
+                                    <div class="organizer-institution">King Abdullah University of Science & Technology</div>
+                                </div>
+                            </div>
+                            <div class="organizer-card">
+                                <div class="organizer-photo">
+                                    <img src="./Past/SC24/assets/sanjif.png" alt="Sanjif Shanmugavelu">
+                                </div>
+                                <div class="organizer-info">
+                                    <div class="organizer-name"><a href="https://www.linkedin.com/in/sanjif-shan-665353161/">Sanjif Shanmugavelu</a></div>
+                                    <div class="organizer-designation">Software Engineer</div>
+                                    <div class="organizer-institution">Groq</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,5 +333,44 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Theme toggle JS-->
+        <script>
+            // Check for saved theme preference or default to system preference
+            const getPreferredTheme = () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    return savedTheme;
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+
+            const setTheme = (theme) => {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateThemeIcon(theme);
+            };
+
+            const updateThemeIcon = (theme) => {
+                const icon = document.querySelector('.theme-icon');
+                icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+            };
+
+            // Initialize theme
+            setTheme(getPreferredTheme());
+
+            // Toggle theme on button click
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+        </script>
     </body>
 </html>
